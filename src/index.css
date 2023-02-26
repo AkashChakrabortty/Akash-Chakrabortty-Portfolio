@@ -14,3 +14,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.primaryColor{
+  color: '#94a9c9' !important;
+  
+}
+.secondayColor{
+  color: '#1cc2e7';
+}
+.secondayColor2{
+  color: '#0bcbd4';
+}
