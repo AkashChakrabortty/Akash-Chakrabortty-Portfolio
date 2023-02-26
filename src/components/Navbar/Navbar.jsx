@@ -1,4 +1,5 @@
 import React from "react";
+import HeaderStyle from "../HeaderStyle/HeaderStyle";
 import img from "./Akash_Chakrabortty.jpg";
 
 const Navbar = () => {
@@ -53,7 +54,9 @@ const Navbar = () => {
             <div className="w-12 rounded-full">
               <img src={img} alt="Akash Chakrabortty" />
             </div>
-            <span className="text-3xl mt-1 font-semibold ml-1">Akash.</span>
+            <span className="text-3xl mt-1 font-semibold ml-1">
+              <HeaderStyle headerSpan={'Akash.'} />
+            </span>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -86,8 +89,8 @@ const Navbar = () => {
             <div className="w-12 rounded-full">
               <img src={img} alt="Akash Chakrabortty" />
             </div>
-            <span className="text-3xl mt-1 font-semibold ml-1 primaryColor">
-              Akash.
+            <span className="text-3xl mt-1 font-semibold ml-1">
+            <HeaderStyle headerSpan={'Akash.'} />
             </span>
           </div>
         </div>
