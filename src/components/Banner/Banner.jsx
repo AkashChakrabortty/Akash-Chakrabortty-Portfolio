@@ -1,6 +1,7 @@
 import React from "react";
 import img from "./Akash_Chakrabortty.jpg";
 import Typewriter from 'typewriter-effect';
+import Button from "../Button/Button";
 
 
 const Banner = () => {
@@ -36,8 +37,7 @@ const Banner = () => {
               target="_blank"
               rel="noreferrer"
             >
-              {" "}
-              <button className="btn font-color">Download Resume</button>
+             <Button btn={'Download Resume'}/>
             </a>
           </div>
         </div>
