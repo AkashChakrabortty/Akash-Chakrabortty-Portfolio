@@ -14,7 +14,7 @@ const Banner = () => {
             alt="Akash Chakrabortty"
           />
           <div>
-            <h6>Hello Everyone!</h6>
+            <h6 className="text-xl">Hello Everyone!</h6>
             <div className="flex gap-2 text-5xl font-bold">
             <span>I'm</span>
             <Typewriter
@@ -22,13 +22,13 @@ const Banner = () => {
                 strings: ['Akash Chakrabortty', 'MERN-Stack Developer'],
                 autoStart: true,
                 loop: true,
-                wrapperClassName: 'text-cyan-300',
+                wrapperClassName: 'text-cyan-400',
                 cursorClassName: 'text-white'
               }}
              style={{color:'red'}}
             />
             </div>
-            <p className="py-6">
+            <p className="py-6 text-xl text-justify">
             Hello! I am Akash Chakrabortty, a professional and passionate developer. A fast learner with a self-learning attitude. I love to explore new technologies.
             </p>
             <a
