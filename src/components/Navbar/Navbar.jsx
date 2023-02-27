@@ -3,6 +3,28 @@ import HeaderStyle from "../HeaderStyle/HeaderStyle";
 import img from "./Akash_Chakrabortty.jpg";
 
 const Navbar = () => {
+  const nav = [
+    {
+      id:1,
+      title: 'About',
+      href: '/about'
+    },
+    {
+      id:2,
+      title: 'Skills',
+      href: '/skills'
+    },
+    {
+      id:3,
+      title: 'Projects',
+      href: '/projects'
+    },
+    {
+      id:4,
+      title: 'Contact',
+      href: '/contact'
+    }
+  ]
   return (
     <div className="w-full lg:w-10/12 mx-auto" style={{ color: "#94a9c9" }}>
       <div className="navbar">
@@ -26,28 +48,17 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 App"
             >
-              <li>
-                <a href="/" className="menu2">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="/" className="menu2">
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a href="/" className="menu2">
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a href="/" className="menu2">
-                  Contact1
-                </a>
-              </li>
+              {
+                nav.map((n,index)=>{
+                  return  <li key={index}>
+                  <a href={n.href} className="menu2 hover:text-cyan-400">
+                    {n.title}
+                  </a>
+                </li>
+                })
+              }
             </ul>
           </div>
           <div className="avatar hidden lg:flex">
@@ -61,26 +72,15 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li>
-              <a href="/" className="menu2">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="/" className="menu2">
-                Skills
-              </a>
-            </li>
-            <li>
-              <a href="/" className="menu2">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="/" className="menu2">
-                Contact
-              </a>
-            </li>
+          {
+                nav.map((n,index)=>{
+                  return  <li key={index}>
+                  <a href={n.href} className="menu2 hover:text-cyan-400">
+                    {n.title}
+                  </a>
+                </li>
+                })
+              }
           </ul>
         </div>
 
