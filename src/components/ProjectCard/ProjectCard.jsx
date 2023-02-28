@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 
 const ProjectCard = ({ project }) => {
@@ -15,25 +16,7 @@ const ProjectCard = ({ project }) => {
           {project?.name}
         </h2>
         <div className="flex justify-center">
-        <label htmlFor="my-modal-5" className=" bg-cyan-400 text-white font-semibold py-3 border-2 border-cyan-400 px-10 rounded-tl-[20px] rounded-br-[20px] mt-4 hover:bg-transparent hover:border-2 transition-[.5s] hover:border-cyan-400 text-xl">Details</label>
-        </div>
-      </div>
-      {/* modal */}
-      <input type="checkbox" id="my-modal-5" className="modal-toggle" />
-      <div className="modal">
-        <div className="modal-box w-11/12 max-w-5xl">
-          <h3 className="font-bold text-lg">
-            Congratulations random Internet user!
-          </h3>
-          <p className="py-4">
-            You've been selected for a chance to get one year of subscription to
-            use Wikipedia for free!
-          </p>
-          <div className="modal-action">
-            <label htmlFor="my-modal-5" className="btn">
-              Yay!
-            </label>
-          </div>
+       <Link to='/projectDetails' state={{ details: project?.details}}><Button btn={'Details'}/></Link>
         </div>
       </div>
     </div>
