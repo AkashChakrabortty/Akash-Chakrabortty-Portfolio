@@ -16,7 +16,7 @@ const Banner = () => {
           />
           <div>
             <h6 className="text-xl">Hello Everyone!</h6>
-            <div className="flex gap-2 text-5xl font-bold">
+            <div className="flex gap-2 text-2xl lg:text-3xl font-bold">
             <span>I'm</span>
             <Typewriter
               options={{
@@ -26,7 +26,6 @@ const Banner = () => {
                 wrapperClassName: 'text-cyan-400',
                 cursorClassName: 'text-white'
               }}
-             style={{color:'red'}}
             />
             </div>
             <p className="py-6 text-xl text-justify">

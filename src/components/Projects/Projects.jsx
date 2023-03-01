@@ -5,7 +5,7 @@ import { ProjectsData } from "../ProjectsData/ProjectsData";
 const Projects = () => {
  
   return (
-    <div className="w-full lg:w-4/6 mx-auto">
+    <div className="w-full lg:w-4/6 mx-auto -mt-16" id="projects">
       <h1 className="lg:text-5xl text-4xl font-bold text-center">
         <HeaderStyle headerSpan={"My Projects"} />
       </h1>

@@ -7,22 +7,22 @@ const Navbar = () => {
     {
       id:1,
       title: 'About',
-      href: '/about'
+      href: '#about'
     },
     {
       id:2,
       title: 'Skills',
-      href: '/skills'
+      href: '#skills'
     },
     {
       id:3,
       title: 'Projects',
-      href: '/projects'
+      href: '#projects'
     },
     {
       id:4,
       title: 'Contact',
-      href: '/contact'
+      href: '#contact'
     }
   ]
   return (
@@ -84,7 +84,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="navbar-center lg:hidden">
+        <div className="navbar-center lg:hidden -ml-3">
           <div className="avatar">
             <div className="w-12 rounded-full">
               <img src={img} alt="Akash Chakrabortty" />
@@ -100,7 +100,7 @@ const Navbar = () => {
             href="https://github.com/AkashChakrabortty"
             target="_blank"
             rel="noreferrer"
-            className="m-1 w-10 h-10 inline-flex justify-center items-center shadow-sm rounded-full border-2 border-gray-700 bg-white text-gray-700"
+            className="lg:m-1 w-10 h-10 inline-flex justify-center items-center shadow-sm rounded-full border-2 border-gray-700 bg-white text-gray-700"
           >
             <svg
               className="w-6 h-6 fill-current"
@@ -114,7 +114,7 @@ const Navbar = () => {
             href="https://www.linkedin.com/in/akash-chakrabortty-dev/"
             target="_blank"
             rel="noreferrer"
-            className="m-1 w-10 h-10 inline-flex justify-center items-center shadow-sm rounded-full border-2 border-[#0E76A8] bg-white text-[#0E76A8]"
+            className="lg:m-1 w-10 h-10 inline-flex justify-center items-center shadow-sm rounded-full border-2 border-[#0E76A8] bg-white text-[#0E76A8]"
             style={{ borderColor: "#0E76A8", color: "#0E76A8" }}
           >
             <svg

@@ -3,7 +3,7 @@ import HeaderStyle from "../HeaderStyle/HeaderStyle";
 import Button from '../Button/Button'
 const ContactMe = () => {
   return (
-    <div>
+    <div id="contact" className="-mt-16">
       <h1 className="lg:text-5xl text-4xl font-bold text-center">
         <HeaderStyle headerSpan={"Get in Touch"} />
       </h1>

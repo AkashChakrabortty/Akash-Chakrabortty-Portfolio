@@ -34,7 +34,7 @@ const Skills = () => {
     }
   ]
   return (
-    <div className="w-full lg:w-4/6 mx-auto">
+    <div className="w-full lg:w-4/6 mx-auto" id="skills">
       <h1 className="lg:text-5xl text-4xl font-bold text-center">
         <HeaderStyle headerSpan={"Skills"} />
       </h1>

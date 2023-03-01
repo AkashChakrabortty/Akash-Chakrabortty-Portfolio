@@ -10,9 +10,9 @@ const ProjectDetailsPage = () => {
   
  
   return (
-    <div className="w-full lg:w-4/6 mx-auto overflow-hidden">
+    <div className="w-full lg:w-4/6 mx-auto overflow-hidden h-screen">
        <h1 className="lg:text-5xl text-4xl font-bold text-center">
-        <HeaderStyle headerSpan={`${project.name}(${project.type})`}/> 
+        <HeaderStyle headerSpan={`${project?.name}(${project?.type})`}/> 
       </h1>
    <div className="img flex flex-col lg:flex-row gap-5 mt-5">
    <div className="img1 w-full lg:w-1/3">
@@ -27,7 +27,7 @@ const ProjectDetailsPage = () => {
    </div>
    <div className="feature">
     {
-      project.details.map((value,index)=>{
+      project?.details?.map((value,index)=>{
         return <p className="text-xl text-justify p-2" key={index} style={{ color: "#94a9c9" }}>
           {value}
         </p>

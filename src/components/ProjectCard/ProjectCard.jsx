@@ -15,6 +15,9 @@ const ProjectCard = ({ project }) => {
         <h2 className="font-semibold text-center" style={{ color: "#94a9c9" }}>
           {project?.name}
         </h2>
+        <h2 className="font-semibold text-center text-cyan-400" >
+          {project?.tech[0]},  {project?.tech[1]},  {project?.tech[2]},  {project?.tech[3]},
+        </h2>
         <div className="flex justify-center">
        <Link to='/projectDetails' state={{ project: project}}><Button btn={'Details'}/></Link>
         </div>
