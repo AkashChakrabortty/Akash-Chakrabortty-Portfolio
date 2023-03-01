@@ -24,3 +24,6 @@ code {
 .secondayColor2{
   color: '#0bcbd4';
 }
+*{
+  box-sizing: border-box;
+}

@@ -14,7 +14,7 @@ const Banner = () => {
             className="max-w-sm rounded-lg shadow-2xl"
             alt="Akash Chakrabortty"
           />
-          <div>
+          <div className="w-11/12 lg:w-full">
             <h6 className="text-xl">Hello Everyone!</h6>
             <div className="flex gap-2 text-2xl lg:text-3xl font-bold">
             <span>I'm</span>
