@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
           {project?.name}
         </h2>
         <div className="flex justify-center">
-       <Link to='/projectDetails' state={{ details: project?.details}}><Button btn={'Details'}/></Link>
+       <Link to='/projectDetails' state={{ project: project}}><Button btn={'Details'}/></Link>
         </div>
       </div>
     </div>
