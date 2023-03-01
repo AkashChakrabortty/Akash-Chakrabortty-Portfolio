@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import HeaderStyle from "../HeaderStyle/HeaderStyle";
 import img from "./Akash_Chakrabortty.jpg";
 
@@ -25,6 +26,8 @@ const Navbar = () => {
       href: '#contact'
     }
   ]
+  const location = useLocation();
+  console.log(location)
   return (
     <div className="w-full lg:w-10/12 mx-auto" style={{ color: "#94a9c9" }}>
       <div className="navbar">
@@ -51,13 +54,17 @@ const Navbar = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 App"
             >
               {
-                nav.map((n,index)=>{
-                  return  <li key={index}>
-                  <a href={n.href} className="menu2 hover:text-cyan-400">
-                    {n.title}
-                  </a>
-                </li>
-                })
+                location?.pathname === '/projectDetails' ? <Link to='/'>Home</Link>  :  <ul className="menu menu-vertical px-1">
+                {
+                      nav.map((n,index)=>{
+                        return  <li key={index}>
+                        <a href={n.href} className="menu2 hover:text-cyan-400">
+                          {n.title}
+                        </a>
+                      </li>
+                      })
+                    }
+                </ul>
               }
             </ul>
           </div>

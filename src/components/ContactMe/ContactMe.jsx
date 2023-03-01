@@ -8,7 +8,7 @@ const ContactMe = () => {
         <HeaderStyle headerSpan={"Get in Touch"} />
       </h1>
       <section className="max-w-4xl p-6 mx-auto bg-transparent rounded-md dark:bg-gray-800">
-        <form>
+        <form action="https://formspree.io/f/mbjerkpp" method="POST">
           <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
             <div>
               <input
