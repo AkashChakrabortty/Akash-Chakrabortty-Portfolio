@@ -27,18 +27,18 @@ export const ProjectsData = [
       type: 'Individual Project',
       name: 'ChitChat',
       img: [c1,c2,c3],
-      tech: ['Bootstrap','React','Express','MongoDB'],
-      link: ['https://chitchat-771c4.web.app/','https://github.com/AkashChakrabortty/ChitChat','https://github.com/AkashChakrabortty/ChitChat-server'],
-      details: ['ChitChat is a social communication project.','1) Firstly users must have an account to use this platform. If they do not have an account, then they can create a new account.','2) After login, they can sent a friend request to the chitchat user.', '3) After making friends, they can see friends posts, give like or comments, and sent a text.', '4) Users can also see like, comments that they gave to the post.', '5) User can update his profile.', '6) Users can also delete their friends.']
+      tech: ['Tailwind', 'Redux','React','Express','MongoDB'],
+      link: ['https://chitchat-v1-291a5.web.app/','https://github.com/AkashChakrabortty/ChitChat','https://github.com/AkashChakrabortty/-ChitChat-server'],
+      details: ['ChitChat is a social communication project.','1) Post status.','2) Add friends.', '3) See friends post.', '4) Search Users.', '5) Give like to posts.', '6) Messages Sent.', '7) Profile edit.', '8)Give comments to posts.']
     },
     {
       id:3,
-      stack: 'JavaScript Fun Project',
+      stack: 'Full Stack Project',
       type: 'Individual Project',
-      name: 'TicTacToe',
-      img: [t1,t2,t3],
-      tech: ['HTML','CSS','Javascript','DOM'],
-      link: ['https://akashchakrabortty.github.io/TicTacToe/','https://github.com/AkashChakrabortty/TicTacToe',''],
-      details: ['This is a simple Javascript fun project.']
+      name: 'Buy-Sell',
+      img: [t1,t2,t3], 
+      tech: ['Bootstrap','React','Express','MongoDB'],
+      link: ['https://buy-sell-6f50b.web.app/','https://github.com/AkashChakrabortty/Buy-Sell','https://github.com/AkashChakrabortty/Buy-Sell-Server'],
+      details: ['Buy-Sell is a resale market place project.','1) Admin role.','2) Buyer role', '3) Seller role.', '4) Report product.', '5) Order product.', '6) Verification seller.', '7) Advertisement product.']
     },
   ]

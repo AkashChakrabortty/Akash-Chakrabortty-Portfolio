@@ -4,7 +4,7 @@ import img from "./16766-forget-password-animation.gif";
 
 const KnowMeMore = () => {
   return (
-    <div className="w-full lg:w-4/6 mx-auto">
+    <div className="w-full lg:w-4/6 mx-auto my-3">
        <h1 className="lg:text-5xl text-4xl font-bold text-center">
         <HeaderStyle headerSpan={"Know Me More"} />
       </h1>

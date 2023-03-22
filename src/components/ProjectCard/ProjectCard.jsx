@@ -19,13 +19,11 @@ const ProjectCard = ({ project }) => {
           {project?.tech[0]},  {project?.tech[1]},  {project?.tech[2]},  {project?.tech[3]},
         </h2>
        <div>
-        {
-          project.id !== 3 ?  <h2 className="font-semibold text-center text-cyan-400" >
+        
+         <h2 className="font-semibold text-center text-cyan-400" >
           <Link to={project?.link[0]} target='_blank'>Live</Link>,   <Link to={project?.link[1]} target='_blank'>Client</Link>,   <Link to={project?.link[2]} target='_blank'>Server</Link>
-        </h2>  :  <h2 className="font-semibold text-center text-cyan-400" >
-        <Link to={project?.link[0]} target='_blank'>Live</Link>,   <Link to={project?.link[1]} target='_blank'>Client</Link>
-        </h2>
-        }
+        </h2>  
+        
        </div>
         <div className="flex justify-center">
        <Link to='/projectDetails' state={{ project: project}}><Button btn={'Details'}/></Link>

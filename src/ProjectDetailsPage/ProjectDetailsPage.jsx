@@ -34,8 +34,7 @@ const ProjectDetailsPage = () => {
           );
         })}
       </div>
-      <div className="link">
-        {project?.id !== 3 ? (
+      <div className="link">  
           <h2 className="font-semibold text-center text-cyan-400">
             <Link to={project?.link[0]} target="_blank">
               Live
@@ -48,18 +47,7 @@ const ProjectDetailsPage = () => {
             <Link to={project?.link[2]} target="_blank">
               Server
             </Link>
-          </h2>
-        ) : (
-          <h2 className="font-semibold text-center text-cyan-400">
-            <Link to={project?.link[0]} target="_blank">
-              Live
-            </Link>
-            ,{" "}
-            <Link to={project?.link[1]} target="_blank">
-              Client
-            </Link>
-          </h2>
-        )}
+          </h2>    
       </div>
     </div>
   );

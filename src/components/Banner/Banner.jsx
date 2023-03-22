@@ -6,12 +6,17 @@ import Button from "../Button/Button";
 
 const Banner = () => {
   return (
-    <div className="w-full lg:w-4/6 mx-auto">
+    <div className="w-full lg:w-4/6 mx-auto my-3">
       <div className="hero" style={{ color: "#94a9c9" }}>
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <img
+          {/* <img
             src={img}
             className="max-w-sm rounded-lg shadow-2xl"
+            alt="Akash Chakrabortty"
+          /> */}
+          <img
+            src={img}
+            className="w-2/5 rounded-full shadow-2xl"
             alt="Akash Chakrabortty"
           />
           <div className="w-11/12 lg:w-full">
