@@ -29,7 +29,7 @@ export const ProjectsData = [
       img: [c1,c2,c3],
       tech: ['Tailwind', 'Redux','React','Express','MongoDB'],
       link: ['https://chitchat-v1-291a5.web.app/','https://github.com/AkashChakrabortty/ChitChat','https://github.com/AkashChakrabortty/-ChitChat-server'],
-      details: ['ChitChat is a social communication project.','1) Post status.','2) Add friends.', '3) See friends post.', '4) Search Users.', '5) Give like to posts.', '6) Messages Sent.', '7) Profile edit.', '8)Give comments to posts.']
+      details: ['ChitChat is a social communication project.','1) Login & Register: Firstly users must have an account to use this platform. If they do not have an account, then they can create a new account','2) Add Friends: After successfully login, user can sent friend request to the ChitChat users. User can see total friend request.', '3) Post Status: User can post status including photo and text.', '4) Like: User can give like to friends post.', '5) Comment: User can do comment to friends post.', '6) Search Users: User can search ChitChat users by their name.', '7) Chat: User can chat with friend by texting.', '8)Profile Update: User can update his information like study, work, from, relationship and bio. User can also change his profile and cover photo.','9) Display interaction: User can see likes and comments that he gave to his friends post.','10) Display Post: User can see his friends post in homepage and own post in profile page.']
     },
     {
       id:3,
@@ -39,6 +39,6 @@ export const ProjectsData = [
       img: [t1,t2,t3], 
       tech: ['Bootstrap','React','Express','MongoDB'],
       link: ['https://buy-sell-6f50b.web.app/','https://github.com/AkashChakrabortty/Buy-Sell','https://github.com/AkashChakrabortty/Buy-Sell-Server'],
-      details: ['Buy-Sell is a resale market place project.','1) Admin role.','2) Buyer role', '3) Seller role.', '4) Report product.', '5) Order product.', '6) Verification seller.', '7) Advertisement product.']
+      details: ['Buy-Sell is a resale market place project.','1) Login & Register: Users must have an account to buy product or sell product.','2) Role: There are 3 kinds of role buyer,seller and admin.', '3) Admin role: Admin can see all buyers, sellers and reported items and delete any of buyer, seller or reported items in the dashboard.', '4) Seller role: Seller can add product to sell and see all product that he added in the dashboard and advertisement his product.', '5) Buyer role: Buyer can order to product and see all order products in the dashboard.', '6) Report product: User can report any product to the admin.']
     },
   ]

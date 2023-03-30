@@ -6,7 +6,7 @@ const ProjectDetailsPage = () => {
   const state = useLocation();
   const project = state?.state?.project;
   return (
-    <div className="w-full lg:w-4/6 mx-auto overflow-hidden h-screen">
+    <div className="w-full lg:w-4/6 mx-auto">
       <h1 className="lg:text-3xl text-2xl font-bold text-center">
         <HeaderStyle headerSpan={`${project?.name}(${project?.type})`} />
       </h1>
